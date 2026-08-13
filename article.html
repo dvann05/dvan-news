@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    id="metaDescription"
+    content="DVAN NEWS — Berita terkini dan informasi terbaru."
+  >
+
+  <meta name="author" content="DVAN NEWS">
+
+  <meta
+    property="og:title"
+    id="ogTitle"
+    content="DVAN NEWS"
+  >
+
+  <meta
+    property="og:description"
+    id="ogDescription"
+    content="Berita terkini dari DVAN NEWS."
+  >
+
+  <meta property="og:type" content="article">
+
+  <title id="pageTitle">
+    DVAN NEWS — Artikel
+  </title>
+
+  <link rel="stylesheet" href="./src/css/output.css">
+</head>
+
+<body class="min-h-screen bg-zinc-950 text-white">
+
+  <!-- READING PROGRESS -->
+  <div
+    id="readingProgress"
+    class="fixed left-0 top-0 z-[100] h-1 w-0 bg-red-500"
+  ></div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/90 backdrop-blur-xl">
+
+    <div class="mx-auto max-w-7xl px-4">
+
+      <div class="flex h-16 items-center justify-between">
+
+        <!-- LOGO -->
+        <a href="./src/index.html" class="flex items-center gap-3">
+
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-500 font-black shadow-lg shadow-red-500/20">
+            D
+          </div>
+
+          <div>
+            <div class="text-xl font-black tracking-tight">
+              DVAN<span class="text-red-500">NEWS</span>
+            </div>
+
+            <div class="hidden text-[9px] uppercase tracking-[0.3em] text-zinc-500 sm:block">
+              Portal Berita Digital
+            </div>
+          </div>
+
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="hidden items-center gap-7 lg:flex">
+
+          <a href="./src/index.html" class="text-sm text-zinc-400 hover:text-white">
+            Home
+          </a>
+
+          <a href="./category.html?category=Nasional" class="text-sm text-zinc-400 hover:text-white">
+            Nasional
+          </a>
+
+          <a href="./category.html?category=Teknologi" class="text-sm text-zinc-400 hover:text-white">
+            Teknologi
+          </a>
+
+          <a href="./category.html?category=Bisnis" class="text-sm text-zinc-400 hover:text-white">
+            Bisnis
+          </a>
+
+          <a href="./category.html?category=Lifestyle" class="text-sm text-zinc-400 hover:text-white">
+            Lifestyle
+          </a>
+
+        </nav>
+
+        <!-- ACTION -->
+        <div class="flex items-center gap-2">
+
+          <button
+            id="shareTop"
+            aria-label="Bagikan artikel"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition hover:bg-white/10"
+          >
+            ↗
+          </button>
+
+          <button
+            id="menuButton"
+            aria-label="Buka menu"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 lg:hidden"
+          >
+            ☰
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-zinc-950 lg:hidden">
+
+      <div class="mx-auto max-w-7xl px-4 py-5">
+
+        <div class="grid gap-2">
+
+          <a href="./src/index.html" class="rounded-xl bg-white/5 px-4 py-3 text-sm">
+            Home
+          </a>
+
+          <a href="./category.html?category=Nasional" class="rounded-xl px-4 py-3 text-sm text-zinc-400">
+            Nasional
+          </a>
+
+          <a href="./category.html?category=Teknologi" class="rounded-xl px-4 py-3 text-sm text-zinc-400">
+            Teknologi
+          </a>
+
+          <a href="./category.html?category=Bisnis" class="rounded-xl px-4 py-3 text-sm text-zinc-400">
+            Bisnis
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- BREAKING NEWS -->
+  <div class="border-b border-white/10 bg-red-500">
+
+    <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5">
+
+      <span class="rounded-md bg-black px-2 py-1 text-[10px] font-black uppercase">
+        Breaking
+      </span>
+
+      <span class="truncate text-xs font-semibold sm:text-sm">
+        Informasi terbaru DVAN NEWS
+      </span>
+
+    </div>
+
+  </div>
+
+  <!-- ARTICLE -->
+  <main>
+
+    <article id="articleContainer" class="mx-auto max-w-5xl px-4 py-10 sm:py-14">
+
+      <!-- CATEGORY -->
+      <div
+        id="articleCategory"
+        class="text-xs font-black uppercase tracking-[0.25em] text-red-500"
+      >
+        Teknologi
+      </div>
+
+      <!-- TITLE -->
+      <h1
+        id="articleTitle"
+        class="mt-4 text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl"
+      >
+        Memuat berita...
+      </h1>
+
+      <!-- META -->
+      <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-zinc-500">
+
+        <span id="articleAuthor">
+          Dvan News
+        </span>
+
+        <span class="text-zinc-700">•</span>
+
+        <span id="articleDate">
+          -
+        </span>
+
+        <span class="text-zinc-700">•</span>
+
+        <span id="articleViews">
+          0 views
+        </span>
+
+      </div>
+
+      <!-- ACTION BAR -->
+      <div class="mt-7 flex flex-wrap items-center gap-3 border-y border-white/10 py-4">
+
+        <button
+          id="shareButton"
+          class="flex items-center gap-2 rounded-xl bg-white/5 px-4 py-2.5 text-sm font-semibold transition hover:bg-white/10"
+        >
+          <span>↗</span>
+          Bagikan
+        </button>
+
+        <button
+          id="bookmarkButton"
+          class="flex items-center gap-2 rounded-xl bg-white/5 px-4 py-2.5 text-sm font-semibold transition hover:bg-white/10"
+        >
+          <span id="bookmarkIcon">🔖</span>
+          <span id="bookmarkText">Simpan</span>
+        </button>
+
+        <button
+          id="copyButton"
+          class="flex items-center gap-2 rounded-xl bg-white/5 px-4 py-2.5 text-sm font-semibold transition hover:bg-white/10"
+        >
+          <span>🔗</span>
+          Salin Link
+        </button>
+
+      </div>
+
+      <!-- HERO IMAGE -->
+      <figure class="mt-8 overflow-hidden rounded-[2rem] border border-white/10">
+
+        <img
+          id="articleImage"
+          src=""
+          alt=""
+          class="max-h-[650px] w-full object-cover"
+        >
+
+        <figcaption
+          id="imageCaption"
+          class="border-t border-white/10 bg-white/[0.03] px-5 py-3 text-xs text-zinc-600"
+        >
+          DVAN NEWS
+        </figcaption>
+
+      </figure>
+
+      <!-- ARTICLE BODY -->
+      <div
+        id="articleContent"
+        class="mx-auto mt-10 max-w-3xl text-[17px] leading-8 text-zinc-300"
+      >
+        <p>Memuat artikel...</p>
+      </div>
+
+      <!-- TAGS -->
+      <div
+        id="articleTags"
+        class="mx-auto mt-10 flex max-w-3xl flex-wrap gap-2"
+      ></div>
+
+      <!-- SHARE BOX -->
+      <div class="mx-auto mt-12 max-w-3xl rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+
+        <h3 class="text-xl font-black">
+          Bagikan artikel ini
+        </h3>
+
+        <p class="mt-2 text-sm text-zinc-500">
+          Bantu orang lain menemukan informasi ini.
+        </p>
+
+        <div class="mt-5 flex flex-wrap gap-3">
+
+          <button
+            id="shareWhatsApp"
+            class="rounded-xl bg-green-500 px-5 py-3 text-sm font-bold text-white hover:bg-green-400"
+          >
+            WhatsApp
+          </button>
+
+          <button
+            id="shareFacebook"
+            class="rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white hover:bg-blue-500"
+          >
+            Facebook
+          </button>
+
+          <button
+            id="shareNative"
+            class="rounded-xl bg-white/10 px-5 py-3 text-sm font-bold hover:bg-white/15"
+          >
+            Bagikan
+          </button>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <!-- RELATED NEWS -->
+    <section class="border-t border-white/10 bg-white/[0.02]">
+
+      <div class="mx-auto max-w-7xl px-4 py-14">
+
+        <div class="mb-8">
+
+          <p class="text-[10px] font-black uppercase tracking-[0.25em] text-red-500">
+            Recommended
+          </p>
+
+          <h2 class="mt-2 text-3xl font-black">
+            Berita Terkait
+          </h2>
+
+        </div>
+
+        <div
+          id="relatedNews"
+          class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+        ></div>
+
+      </div>
+
+    </section>
+
+    <!-- COMMENTS PLACEHOLDER -->
+    <section class="mx-auto max-w-3xl px-4 py-14">
+
+      <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
+
+        <h2 class="text-2xl font-black">
+          Apa pendapat kamu?
+        </h2>
+
+        <p class="mt-2 text-sm text-zinc-500">
+          Kolom komentar akan kita aktifkan pada tahap berikutnya.
+        </p>
+
+        <div class="mt-6 h-24 rounded-2xl border border-dashed border-white/10"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10">
+
+    <div class="mx-auto max-w-7xl px-4 py-12">
+
+      <div class="flex flex-col justify-between gap-6 md:flex-row">
+
+        <div>
+
+          <div class="text-xl font-black">
+            DVAN<span class="text-red-500">NEWS</span>
+          </div>
+
+          <p class="mt-2 max-w-md text-sm leading-6 text-zinc-500">
+            Portal berita digital dengan informasi terkini, menarik dan mudah dipahami.
+          </p>
+
+        </div>
+
+        <div class="text-xs text-zinc-600">
+          © 2026 DVAN NEWS. All rights reserved.
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- TOAST -->
+  <div
+    id="toast"
+    class="pointer-events-none fixed bottom-6 left-1/2 z-[200] hidden -translate-x-1/2 rounded-xl border border-white/10 bg-zinc-900 px-5 py-3 text-sm font-semibold shadow-2xl"
+  >
+    Berhasil
+  </div>
+
+  <!-- NEWS DATA -->
+  <script src="./src/js/news.js"></script>
+
+  <!-- ARTICLE SCRIPT -->
+  <script>
+
+    const params =
+      new URLSearchParams(window.location.search);
+
+    const articleId =
+      Number(params.get("id")) || 1;
+
+    const article =
+      window.newsData?.find(
+        item => item.id === articleId
+      );
+
+    const pageTitle =
+      document.getElementById("pageTitle");
+
+    const metaDescription =
+      document.getElementById("metaDescription");
+
+    const ogTitle =
+      document.getElementById("ogTitle");
+
+    const ogDescription =
+      document.getElementById("ogDescription");
+
+    const articleCategory =
+      document.getElementById("articleCategory");
+
+    const articleTitle =
+      document.getElementById("articleTitle");
+
+    const articleAuthor =
+      document.getElementById("articleAuthor");
+
+    const articleDate =
+      document.getElementById("articleDate");
+
+    const articleViews =
+      document.getElementById("articleViews");
+
+    const articleImage =
+      document.getElementById("articleImage");
+
+    const imageCaption =
+      document.getElementById("imageCaption");
+
+    const articleContent =
+      document.getElementById("articleContent");
+
+    const relatedNews =
+      document.getElementById("relatedNews");
+
+    const articleTags =
+      document.getElementById("articleTags");
+
+
+    function formatViews(number) {
+
+      if (number >= 1000000) {
+        return (
+          (number / 1000000)
+            .toFixed(1)
+            .replace(".0", "") +
+          "M"
+        );
+      }
+
+      if (number >= 1000) {
+        return (
+          (number / 1000)
+            .toFixed(1)
+            .replace(".0", "") +
+          "K"
+        );
+      }
+
+      return number;
+    }
+
+
+    function loadArticle() {
+
+      if (!article) {
+
+        articleTitle.textContent =
+          "Artikel tidak ditemukan";
+
+        articleCategory.textContent =
+          "ERROR";
+
+        articleContent.innerHTML = `
+          <div class="rounded-2xl border border-red-500/20 bg-red-500/5 p-6">
+
+            <h2 class="text-xl font-bold">
+              Berita tidak ditemukan.
+            </h2>
+
+            <p class="mt-2 text-sm text-zinc-500">
+              Artikel yang kamu cari tidak tersedia.
+            </p>
+
+            <a
+              href="./src/index.html"
+              class="mt-5 inline-block rounded-xl bg-red-500 px-5 py-3 text-sm font-bold"
+            >
+              Kembali ke Home
+            </a>
+
+          </div>
+        `;
+
+        return;
+      }
+
+
+      pageTitle.textContent =
+        `${article.title} — DVAN NEWS`;
+
+      metaDescription.setAttribute(
+        "content",
+        article.excerpt
+      );
+
+      ogTitle.setAttribute(
+        "content",
+        article.title
+      );
+
+      ogDescription.setAttribute(
+        "content",
+        article.excerpt
+      );
+
+      articleCategory.textContent =
+        article.category;
+
+      articleTitle.textContent =
+        article.title;
+
+      articleAuthor.textContent =
+        article.author;
+
+      articleDate.textContent =
+        article.date;
+
+      articleViews.textContent =
+        `${formatViews(article.views)} views`;
+
+      articleImage.src =
+        article.image;
+
+      articleImage.alt =
+        article.title;
+
+      imageCaption.textContent =
+        `${article.category} • DVAN NEWS`;
+
+      articleContent.innerHTML =
+        article.content;
+
+
+      const tags = [
+        article.category,
+        "DVAN NEWS",
+        "Berita Terkini",
+        "Informasi"
+      ];
+
+      articleTags.innerHTML =
+        tags.map(tag => `
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-zinc-400">
+            #${tag}
+          </span>
+        `).join("");
+
+
+      loadRelatedNews();
+    }
+
+
+    function loadRelatedNews() {
+
+      if (!window.newsData) {
+        return;
+      }
+
+      const related =
+        window.newsData
+          .filter(item =>
+            item.id !== article.id &&
+            item.category === article.category
+          )
+          .slice(0, 3);
+
+      const fallback =
+        related.length >= 3
+          ? related
+          : window.newsData
+              .filter(item => item.id !== article.id)
+              .slice(0, 3);
+
+      relatedNews.innerHTML =
+        fallback.map(item => `
+
+          <article class="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] transition hover:-translate-y-1 hover:border-red-500/30">
+
+            <a href="./article.html?id=${item.id}">
+
+              <div class="h-52 overflow-hidden">
+
+                <img
+                  src="${item.image}"
+                  alt="${item.title}"
+                  class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                >
+
+              </div>
+
+              <div class="p-5">
+
+                <span class="text-[10px] font-black uppercase tracking-widest text-red-400">
+                  ${item.category}
+                </span>
+
+                <h3 class="mt-2 text-lg font-bold leading-tight group-hover:text-red-400">
+                  ${item.title}
+                </h3>
+
+                <p class="mt-3 text-xs text-zinc-600">
+                  ${item.time} · ${formatViews(item.views)} views
+                </p>
+
+              </div>
+
+            </a>
+
+          </article>
+
+        `).join("");
+    }
+
+
+    const toast =
+      document.getElementById("toast");
+
+
+    function showToast(message) {
+
+      toast.textContent =
+        message;
+
+      toast.classList.remove("hidden");
+
+      setTimeout(() => {
+        toast.classList.add("hidden");
+      }, 2200);
+    }
+
+
+    const bookmarkButton =
+      document.getElementById("bookmarkButton");
+
+    const bookmarkText =
+      document.getElementById("bookmarkText");
+
+    const bookmarkIcon =
+      document.getElementById("bookmarkIcon");
+
+
+    function getBookmarks() {
+
+      return JSON.parse(
+        localStorage.getItem("dvanBookmarks") || "[]"
+      );
+    }
+
+
+    function isBookmarked() {
+
+      return getBookmarks()
+        .includes(articleId);
+    }
+
+
+    function updateBookmarkUI() {
+
+      if (isBookmarked()) {
+
+        bookmarkIcon.textContent =
+          "★";
+
+        bookmarkText.textContent =
+          "Tersimpan";
+
+        bookmarkButton.classList.add(
+          "bg-red-500/10",
+          "text-red-400"
+        );
+
+      } else {
+
+        bookmarkIcon.textContent =
+          "🔖";
+
+        bookmarkText.textContent =
+          "Simpan";
+
+        bookmarkButton.classList.remove(
+          "bg-red-500/10",
+          "text-red-400"
+        );
+      }
+    }
+
+
+    bookmarkButton.addEventListener(
+      "click",
+      () => {
+
+        let bookmarks =
+          getBookmarks();
+
+        if (bookmarks.includes(articleId)) {
+
+          bookmarks =
+            bookmarks.filter(
+              id => id !== articleId
+            );
+
+          showToast(
+            "Artikel dihapus dari simpanan"
+          );
+
+        } else {
+
+          bookmarks.push(articleId);
+
+          showToast(
+            "Artikel berhasil disimpan"
+          );
+        }
+
+        localStorage.setItem(
+          "dvanBookmarks",
+          JSON.stringify(bookmarks)
+        );
+
+        updateBookmarkUI();
+      }
+    );
+
+
+    const copyButton =
+      document.getElementById("copyButton");
+
+
+    copyButton.addEventListener(
+      "click",
+      async () => {
+
+        try {
+
+          await navigator.clipboard.writeText(
+            window.location.href
+          );
+
+          showToast(
+            "Link berhasil disalin"
+          );
+
+        } catch {
+
+          showToast(
+            "Gagal menyalin link"
+          );
+        }
+      }
+    );
+
+
+    async function shareArticle() {
+
+      const shareData = {
+
+        title:
+          article?.title ||
+          "DVAN NEWS",
+
+        text:
+          article?.excerpt ||
+          "Baca berita terbaru di DVAN NEWS",
+
+        url:
+          window.location.href
+      };
+
+
+      if (navigator.share) {
+
+        try {
+
+          await navigator.share(
+            shareData
+          );
+
+        } catch {
+          // User cancelled sharing.
+        }
+
+      } else {
+
+        try {
+
+          await navigator.clipboard.writeText(
+            window.location.href
+          );
+
+          showToast(
+            "Link berhasil disalin"
+          );
+
+        } catch {
+
+          showToast(
+            "Bagikan link artikel ini"
+          );
+        }
+      }
+    }
+
+
+    document
+      .getElementById("shareButton")
+      .addEventListener(
+        "click",
+        shareArticle
+      );
+
+
+    document
+      .getElementById("shareTop")
+      .addEventListener(
+        "click",
+        shareArticle
+      );
+
+
+    document
+      .getElementById("shareNative")
+      .addEventListener(
+        "click",
+        shareArticle
+      );
+
+
+    document
+      .getElementById("shareWhatsApp")
+      .addEventListener(
+        "click",
+        () => {
+
+          const text =
+            `${article.title}\n\n${window.location.href}`;
+
+          const url =
+            "https://wa.me/?text=" +
+            encodeURIComponent(text);
+
+          window.open(
+            url,
+            "_blank"
+          );
+        }
+      );
+
+
+    document
+      .getElementById("shareFacebook")
+      .addEventListener(
+        "click",
+        () => {
+
+          const url =
+            "https://www.facebook.com/sharer/sharer.php?u=" +
+            encodeURIComponent(
+              window.location.href
+            );
+
+          window.open(
+            url,
+            "_blank",
+            "width=600,height=500"
+          );
+        }
+      );
+
+
+    const menuButton =
+      document.getElementById("menuButton");
+
+    const mobileMenu =
+      document.getElementById("mobileMenu");
+
+
+    menuButton.addEventListener(
+      "click",
+      () => {
+
+        mobileMenu.classList.toggle(
+          "hidden"
+        );
+      }
+    );
+
+
+    const readingProgress =
+      document.getElementById(
+        "readingProgress"
+      );
+
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        const scrollTop =
+          window.scrollY;
+
+        const documentHeight =
+          document.documentElement.scrollHeight -
+          window.innerHeight;
+
+        const progress =
+          documentHeight > 0
+            ? (scrollTop / documentHeight) * 100
+            : 0;
+
+        readingProgress.style.width =
+          `${progress}%`;
+      }
+    );
+
+
+    loadArticle();
+
+    updateBookmarkUI();
+
+  </script>
+
+</body>
+</html>
+
