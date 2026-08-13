@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DVAN NEWS — Portal berita modern dengan informasi terkini, teknologi, bisnis, nasional, lifestyle, dan berita populer.">
+  <meta name="keywords" content="berita terkini, berita terbaru, teknologi, bisnis, nasional, lifestyle">
+  <meta name="author" content="DVAN NEWS">
+
+  <meta property="og:title" content="DVAN NEWS — Berita Terkini">
+  <meta property="og:description" content="Portal berita modern dengan informasi terkini dan terpercaya.">
+  <meta property="og:type" content="website">
+
+  <title>DVAN NEWS — Berita Terkini</title>
+
+  <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="min-h-screen bg-zinc-950 text-white">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/90 backdrop-blur-xl">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex h-16 items-center justify-between">
+
+        <!-- LOGO -->
+        <a href="./index.html" class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-500 text-lg font-black shadow-lg shadow-red-500/20">
+            D
+          </div>
+
+          <div>
+            <div class="text-xl font-black tracking-tight">
+              DVAN<span class="text-red-500">NEWS</span>
+            </div>
+
+            <div class="hidden text-[9px] font-medium uppercase tracking-[0.3em] text-zinc-500 sm:block">
+              Portal Berita Digital
+            </div>
+          </div>
+        </a>
+
+        <!-- DESKTOP NAV -->
+        <nav class="hidden items-center gap-7 lg:flex">
+          <a href="./index.html" class="text-sm font-semibold text-white">Home</a>
+          <a href="#terkini" class="text-sm text-zinc-400 transition hover:text-white">Terkini</a>
+          <a href="#politik" class="text-sm text-zinc-400 transition hover:text-white">Politik</a>
+          <a href="#teknologi" class="text-sm text-zinc-400 transition hover:text-white">Teknologi</a>
+          <a href="#bisnis" class="text-sm text-zinc-400 transition hover:text-white">Bisnis</a>
+          <a href="#lifestyle" class="text-sm text-zinc-400 transition hover:text-white">Lifestyle</a>
+        </nav>
+
+        <!-- HEADER ACTION -->
+        <div class="flex items-center gap-2">
+          <button id="searchButton" aria-label="Cari berita" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-lg transition hover:bg-white/10">
+            🔍
+          </button>
+
+          <button id="menuButton" aria-label="Buka menu" class="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-lg transition hover:bg-white/10 lg:hidden">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE NAV -->
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-zinc-950 lg:hidden">
+      <nav class="mx-auto max-w-7xl px-4 py-5">
+        <div class="grid gap-2">
+          <a href="./index.html" class="rounded-xl bg-white/5 px-4 py-3 text-sm font-semibold">Home</a>
+          <a href="#terkini" class="rounded-xl px-4 py-3 text-sm text-zinc-400 hover:bg-white/5 hover:text-white">Terkini</a>
+          <a href="#politik" class="rounded-xl px-4 py-3 text-sm text-zinc-400 hover:bg-white/5 hover:text-white">Politik</a>
+          <a href="#teknologi" class="rounded-xl px-4 py-3 text-sm text-zinc-400 hover:bg-white/5 hover:text-white">Teknologi</a>
+          <a href="#bisnis" class="rounded-xl px-4 py-3 text-sm text-zinc-400 hover:bg-white/5 hover:text-white">Bisnis</a>
+          <a href="#lifestyle" class="rounded-xl px-4 py-3 text-sm text-zinc-400 hover:bg-white/5 hover:text-white">Lifestyle</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREAKING NEWS -->
+  <section class="border-b border-white/10 bg-red-500" aria-label="Breaking news">
+    <div class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5">
+      <span class="shrink-0 rounded-md bg-black px-2.5 py-1 text-[10px] font-black uppercase tracking-wider">
+        Breaking
+      </span>
+
+      <p class="truncate text-xs font-semibold sm:text-sm">
+        Perkembangan terbaru hari ini menjadi perhatian publik
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="mx-auto max-w-7xl px-4 pb-8 pt-8 sm:pt-10">
+      <div class="grid gap-5 lg:grid-cols-3">
+
+        <!-- MAIN HERO -->
+        <article class="group relative overflow-hidden rounded-[2rem] border border-white/10 lg:col-span-2">
+          <a href="./article.html?id=1">
+
+            <div class="h-[430px] sm:h-[520px]">
+              <img
+                src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1600&q=85"
+                alt="Berita utama DVAN NEWS"
+                class="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              >
+            </div>
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+            <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-9">
+              <div class="mb-4 flex items-center gap-3">
+                <span class="rounded-full bg-red-500 px-3 py-1.5 text-[10px] font-black uppercase tracking-wider">
+                  Headline
+                </span>
+
+                <span class="text-xs text-zinc-300">
+                  10 menit lalu
+                </span>
+              </div>
+
+              <h1 class="max-w-4xl text-3xl font-black leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+                Perkembangan Teknologi Mengubah Cara Kita Menjalani Kehidupan
+              </h1>
+
+              <p class="mt-4 hidden max-w-2xl text-sm leading-6 text-zinc-300 sm:block">
+                Simak informasi terbaru mengenai perkembangan teknologi dan berbagai perubahan yang sedang terjadi di masyarakat.
+              </p>
+
+              <div class="mt-5 flex items-center gap-2 text-sm font-semibold text-white">
+                Baca selengkapnya <span>→</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- SIDE NEWS -->
+        <div class="grid gap-5">
+
+          <article class="news-card overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03]">
+            <a href="./article.html?id=2">
+
+              <div class="image-zoom h-52">
+                <img
+                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85"
+                  alt="Berita bisnis"
+                  class="h-full w-full object-cover"
+                >
+              </div>
+
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <span class="text-[10px] font-black uppercase tracking-widest text-emerald-400">
+                    Bisnis
+                  </span>
+
+                  <span class="text-xs text-zinc-600">25m</span>
+                </div>
+
+                <h2 class="mt-2 text-xl font-bold leading-tight">
+                  Tren Bisnis Digital yang Semakin Berkembang
+                </h2>
+
+                <p class="mt-3 text-sm leading-6 text-zinc-500">
+                  Perubahan teknologi membuka peluang baru bagi dunia usaha.
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="news-card rounded-[2rem] border border-white/10 bg-white/[0.03] p-6">
+            <a href="./article.html?id=3">
+
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-black uppercase tracking-widest text-blue-400">
+                  Teknologi
+                </span>
+
+                <span class="text-xs text-zinc-600">1j</span>
+              </div>
+
+              <h2 class="mt-3 text-xl font-bold leading-tight">
+                Inovasi Baru Membawa Perubahan Besar
+              </h2>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                Berbagai inovasi terbaru terus bermunculan dan mengubah kehidupan sehari-hari.
+              </p>
+
+              <div class="mt-5 text-sm font-semibold text-white">
+                Baca berita →
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORY PILLS -->
+    <section class="mx-auto max-w-7xl px-4 py-5">
+      <div class="flex gap-2 overflow-x-auto pb-2">
+
+        <a href="#terkini" class="shrink-0 rounded-full bg-red-500 px-5 py-2.5 text-xs font-bold">
+          Semua
+        </a>
+
+        <a href="#politik" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-xs font-medium text-zinc-400 hover:text-white">
+          Politik
+        </a>
+
+        <a href="#teknologi" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-xs font-medium text-zinc-400 hover:text-white">
+          Teknologi
+        </a>
+
+        <a href="#bisnis" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-xs font-medium text-zinc-400 hover:text-white">
+          Bisnis
+        </a>
+
+        <a href="#lifestyle" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-xs font-medium text-zinc-400 hover:text-white">
+          Lifestyle
+        </a>
+
+        <a href="#sport" class="shrink-0 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-xs font-medium text-zinc-400 hover:text-white">
+          Sport
+        </a>
+
+      </div>
+    </section>
+
+    <!-- LATEST NEWS -->
+    <section id="terkini" class="mx-auto max-w-7xl px-4 py-12">
+
+      <div class="mb-8 flex items-end justify-between">
+        <div>
+          <p class="text-[10px] font-black uppercase tracking-[0.25em] text-red-500">
+            Update terbaru
+          </p>
+
+          <h2 class="mt-2 text-3xl font-black tracking-tight sm:text-4xl">
+            Berita Terkini
+          </h2>
+        </div>
+
+        <a href="./category.html?category=terkini" class="hidden text-sm font-semibold text-zinc-400 hover:text-white sm:block">
+          Lihat semua →
+        </a>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- CARD 1 -->
+        <article class="news-card overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03]">
+          <a href="./article.html?id=4">
+
+            <div class="image-zoom h-56">
+              <img
+                src="https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1000&q=85"
+                alt="Berita nasional"
+                class="h-full w-full object-cover"
+              >
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-black uppercase tracking-widest text-red-400">
+                  Nasional
+                </span>
+
+                <span class="text-xs text-zinc-600">35m</span>
+              </div>
+
+              <h3 class="mt-3 text-xl font-bold leading-tight">
+                Informasi Nasional Terbaru Hari Ini
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                Berita dan informasi terbaru yang dirangkum secara singkat dan mudah dipahami.
+              </p>
+            </div>
+
+          </a>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="news-card overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03]">
+          <a href="./article.html?id=5">
+
+            <div class="image-zoom h-56">
+              <img
+                src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1000&q=85"
+                alt="Berita teknologi"
+                class="h-full w-full object-cover"
+              >
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-black uppercase tracking-widest text-blue-400">
+                  Teknologi
+                </span>
+
+                <span class="text-xs text-zinc-600">1j</span>
+              </div>
+
+              <h3 class="mt-3 text-xl font-bold leading-tight">
+                Teknologi Modern Terus Berkembang Pesat
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                Berbagai teknologi baru menghadirkan peluang sekaligus tantangan.
+              </p>
+            </div>
+
+          </a>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="news-card overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03]">
+          <a href="./article.html?id=6">
+
+            <div class="image-zoom h-56">
+              <img
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85"
+                alt="Berita bisnis"
+                class="h-full w-full object-cover"
+              >
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-black uppercase tracking-widest text-emerald-400">
+                  Bisnis
+                </span>
+
+                <span class="text-xs text-zinc-600">2j</span>
+              </div>
+
+              <h3 class="mt-3 text-xl font-bold leading-tight">
+                Peluang Baru di Era Ekonomi Digital
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                Perubahan digital membuka berbagai peluang baru bagi pelaku usaha.
+              </p>
+            </div>
+
+          </a>
+        </article>
+
+        <!-- CARD 4 -->
+        <article id="politik" class="news-card overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03]">
+          <a href="./article.html?id=7">
+
+            <div class="image-zoom h-56">
+              <img
+                src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1000&q=85"
+                alt="Berita politik"
+                class="h-full w-full object-cover"
+              >
+            </div>
+
+            <div class="p-5">
+              <span class="text-[10px] font-black uppercase tracking-widest text-purple-400">
+                Politik
+              </span>
+
+              <h3 class="mt-3 text-xl font-bold leading-tight">
+                Perkembangan Politik Menjadi Sorotan
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                Simak perkembangan politik terbaru dan berbagai isu yang sedang dibahas.
+              </p>
+            </div>
+
+          </a>
+        </article>
+
+        <!-- CARD 5 -->
+        <article id="teknologi" class="news-card overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03]">
+          <a href="./article.html?id=8">
+
+            <div class="image-zoom h-56">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+                alt="Teknologi terbaru"
+                class="h-full w-full object-cover"
+              >
+            </div>
+
+            <div class="p-5">
+              <span class="text-[10px] font-black uppercase tracking-widest text-cyan-400">
+                Teknologi
+              </span>
+
+              <h3 class="mt-3 text-xl font-bold leading-tight">
+                Masa Depan Teknologi Semakin Menarik
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                Perkembangan teknologi menghadirkan berbagai inovasi baru.
+              </p>
+            </div>
+
+          </a>
+        </article>
+
+        <!-- CARD 6 -->
+        <article id="lifestyle" class="news-card overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03]">
+          <a href="./article.html?id=9">
+
+            <div class="image-zoom h-56">
+              <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+                alt="Lifestyle"
+                class="h-full w-full object-cover"
+              >
+            </div>
+
+            <div class="p-5">
+              <span class="text-[10px] font-black uppercase tracking-widest text-pink-400">
+                Lifestyle
+              </span>
+
+              <h3 class="mt-3 text-xl font-bold leading-tight">
+                Tren Lifestyle yang Banyak Diminati
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-zinc-500">
+                Berbagai tren gaya hidup modern semakin populer di masyarakat.
+              </p>
+            </div>
+
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TRENDING -->
+    <section id="trending" class="border-y border-white/10 bg-white/[0.02]">
+
+      <div class="mx-auto max-w-7xl px-4 py-14">
+
+        <div class="mb-8">
+          <p class="text-[10px] font-black uppercase tracking-[0.25em] text-red-500">
+            Paling populer
+          </p>
+
+          <h2 class="mt-2 text-3xl font-black sm:text-4xl">
+            Trending Sekarang
+          </h2>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+
+          <a href="./article.html?id=10" class="group rounded-2xl border border-white/10 bg-zinc-900 p-5 transition hover:-translate-y-1 hover:border-red-500/30">
+            <span class="text-5xl font-black text-red-500/80">01</span>
+
+            <h3 class="mt-5 font-bold leading-6 group-hover:text-red-400">
+              Berita yang sedang ramai diperbincangkan
+            </h3>
+
+            <p class="mt-3 text-xs text-zinc-600">125K views</p>
+          </a>
+
+          <a href="./article.html?id=11" class="group rounded-2xl border border-white/10 bg-zinc-900 p-5 transition hover:-translate-y-1 hover:border-red-500/30">
+            <span class="text-5xl font-black text-red-500/80">02</span>
+
+            <h3 class="mt-5 font-bold leading-6 group-hover:text-red-400">
+              Teknologi terbaru menjadi perhatian
+            </h3>
+
+            <p class="mt-3 text-xs text-zinc-600">98K views</p>
+          </a>
+
+          <a href="./article.html?id=12" class="group rounded-2xl border border-white/10 bg-zinc-900 p-5 transition hover:-translate-y-1 hover:border-red-500/30">
+            <span class="text-5xl font-black text-red-500/80">03</span>
+
+            <h3 class="mt-5 font-bold leading-6 group-hover:text-red-400">
+              Tren bisnis digital tahun ini
+            </h3>
+
+            <p class="mt-3 text-xs text-zinc-600">84K views</p>
+          </a>
+
+          <a href="./article.html?id=13" class="group rounded-2xl border border-white/10 bg-zinc-900 p-5 transition hover:-translate-y-1 hover:border-red-500/30">
+            <span class="text-5xl font-black text-red-500/80">04</span>
+
+            <h3 class="mt-5 font-bold leading-6 group-hover:text-red-400">
+              Fenomena unik yang menjadi viral
+            </h3>
+
+            <p class="mt-3 text-xs text-zinc-600">72K views</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="mx-auto max-w-5xl px-4 py-20">
+
+      <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-red-500/20 via-purple-500/10 to-blue-500/20 p-8 text-center sm:p-14">
+
+        <div class="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-red-500/10 blur-3xl"></div>
+        <div class="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-blue-500/10 blur-3xl"></div>
+
+        <div class="relative">
+
+          <p class="text-[10px] font-black uppercase tracking-[0.3em] text-red-400">
+            Newsletter
+          </p>
+
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">
+            Jangan lewatkan berita penting.
+          </h2>
+
+          <p class="mx-auto mt-4 max-w-xl text-sm leading-6 text-zinc-400">
+            Dapatkan informasi terbaru dan rangkuman berita pilihan DVAN NEWS.
+          </p>
+
+          <form id="newsletterForm" class="mx-auto mt-8 flex max-w-lg flex-col gap-3 sm:flex-row">
+
+            <input
+              id="emailInput"
+              type="email"
+              required
+              placeholder="Masukkan email kamu"
+              class="h-12 flex-1 rounded-xl border border-white/10 bg-black/30 px-4 text-sm outline-none placeholder:text-zinc-600 focus:border-red-500"
+            >
+
+            <button
+              type="submit"
+              class="h-12 rounded-xl bg-red-500 px-7 text-sm font-bold transition hover:bg-red-400"
+            >
+              Subscribe
+            </button>
+
+          </form>
+
+          <p id="newsletterMessage" class="mt-4 hidden text-sm text-emerald-400"></p>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10">
+
+    <div class="mx-auto max-w-7xl px-4 py-12">
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+        <div class="lg:col-span-2">
+
+          <div class="flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-500 font-black">
+              D
+            </div>
+
+            <div class="text-xl font-black">
+              DVAN<span class="text-red-500">NEWS</span>
+            </div>
+          </div>
+
+          <p class="mt-4 max-w-md text-sm leading-6 text-zinc-500">
+            Portal berita digital yang menghadirkan informasi terkini, menarik dan mudah dipahami.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h3 class="font-bold">Navigasi</h3>
+
+          <div class="mt-4 grid gap-3 text-sm text-zinc-500">
+            <a href="./index.html" class="hover:text-white">Home</a>
+            <a href="#terkini" class="hover:text-white">Berita Terkini</a>
+            <a href="#trending" class="hover:text-white">Trending</a>
+            <a href="./category.html" class="hover:text-white">Kategori</a>
+          </div>
+
+        </div>
+
+        <div>
+
+          <h3 class="font-bold">Informasi</h3>
+
+          <div class="mt-4 grid gap-3 text-sm text-zinc-500">
+            <a href="./about.html" class="hover:text-white">Tentang Kami</a>
+            <a href="./contact.html" class="hover:text-white">Kontak</a>
+            <a href="./privacy.html" class="hover:text-white">Privacy Policy</a>
+            <a href="./terms.html" class="hover:text-white">Terms</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mt-10 border-t border-white/10 pt-6 text-xs text-zinc-600">
+        © 2026 DVAN NEWS. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SEARCH MODAL -->
+  <div id="searchModal" class="fixed inset-0 z-[100] hidden bg-black/80 p-4 backdrop-blur-md">
+
+    <div class="mx-auto mt-20 max-w-2xl rounded-3xl border border-white/10 bg-zinc-900 p-6 shadow-2xl">
+
+      <div class="flex items-center justify-between">
+
+        <h2 class="text-xl font-bold">
+          Cari Berita
+        </h2>
+
+        <button
+          id="closeSearch"
+          class="flex h-9 w-9 items-center justify-center rounded-full bg-white/5"
+        >
+          ✕
+        </button>
+
+      </div>
+
+      <form id="searchForm" class="mt-5 flex gap-2">
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Cari berita..."
+          class="h-12 flex-1 rounded-xl border border-white/10 bg-black/30 px-4 text-sm outline-none focus:border-red-500"
+        >
+
+        <button
+          type="submit"
+          class="rounded-xl bg-red-500 px-6 font-bold"
+        >
+          Cari
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+
+    const searchButton = document.getElementById("searchButton");
+    const searchModal = document.getElementById("searchModal");
+    const closeSearch = document.getElementById("closeSearch");
+    const searchInput = document.getElementById("searchInput");
+
+    searchButton.addEventListener("click", () => {
+      searchModal.classList.remove("hidden");
+
+      setTimeout(() => {
+        searchInput.focus();
+      }, 100);
+    });
+
+
+    closeSearch.addEventListener("click", () => {
+      searchModal.classList.add("hidden");
+    });
+
+
+    searchModal.addEventListener("click", (event) => {
+      if (event.target === searchModal) {
+        searchModal.classList.add("hidden");
+      }
+    });
+
+
+    const searchForm = document.getElementById("searchForm");
+
+    searchForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const keyword = searchInput.value.trim();
+
+      if (!keyword) {
+        return;
+      }
+
+      window.location.href =
+        "./search.html?q=" +
+        encodeURIComponent(keyword);
+    });
+
+
+    const newsletterForm =
+      document.getElementById("newsletterForm");
+
+    const newsletterMessage =
+      document.getElementById("newsletterMessage");
+
+    newsletterForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const email =
+        document.getElementById("emailInput").value;
+
+      if (!email) {
+        return;
+      }
+
+      newsletterMessage.textContent =
+        "Terima kasih! Email kamu berhasil didaftarkan.";
+
+      newsletterMessage.classList.remove("hidden");
+
+      newsletterForm.reset();
+    });
+
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        searchModal.classList.add("hidden");
+      }
+    });
+
+  </script>
+
+<script src="./js/news.js"></script>
+<script src="./js/app.js"></script>
+
+</body>
+</html>
